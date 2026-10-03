@@ -1,0 +1,47 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "rgb(var(--ui-primary) / <alpha-value>)",
+        "primary-hover": "rgb(var(--ui-primary-hover) / <alpha-value>)",
+        "primary-active": "rgb(var(--ui-primary-active) / <alpha-value>)",
+        "primary-soft": "rgb(var(--ui-primary-soft) / <alpha-value>)",
+        surface: "rgb(var(--ui-surface) / <alpha-value>)",
+        canvas: "rgb(var(--ui-canvas) / <alpha-value>)",
+        ink: "rgb(var(--ui-ink) / <alpha-value>)",
+        muted: "rgb(var(--ui-muted) / <alpha-value>)",
+        "muted-strong": "rgb(var(--ui-muted-strong) / <alpha-value>)",
+        border: "rgb(var(--ui-border) / <alpha-value>)",
+        "border-strong": "rgb(var(--ui-border-strong) / <alpha-value>)",
+        success: "rgb(var(--ui-success) / <alpha-value>)",
+        "success-soft": "rgb(var(--ui-success-soft) / <alpha-value>)",
+        "success-ink": "rgb(var(--ui-success-ink) / <alpha-value>)",
+        warning: "rgb(var(--ui-warning) / <alpha-value>)",
+        "warning-soft": "rgb(var(--ui-warning-soft) / <alpha-value>)",
+        "warning-ink": "rgb(var(--ui-warning-ink) / <alpha-value>)",
+        danger: "rgb(var(--ui-danger) / <alpha-value>)",
+        "danger-soft": "rgb(var(--ui-danger-soft) / <alpha-value>)",
+        "danger-ink": "rgb(var(--ui-danger-ink) / <alpha-value>)",
+        info: "rgb(var(--ui-info) / <alpha-value>)",
+        "info-soft": "rgb(var(--ui-info-soft) / <alpha-value>)",
+        "info-ink": "rgb(var(--ui-info-ink) / <alpha-value>)",
+      },
+      fontFamily: { sans: ["var(--ui-font-sans)"], mono: ["var(--ui-font-mono)"] },
+      fontSize: {
+        "ui-h1": ["var(--ui-font-size-h1)", { lineHeight: "var(--ui-line-h1)" }],
+        "ui-h2": ["var(--ui-font-size-h2)", { lineHeight: "var(--ui-line-h2)" }],
+        "ui-h3": ["var(--ui-font-size-h3)", { lineHeight: "var(--ui-line-h3)" }],
+        "ui-body": ["var(--ui-font-size-body)", { lineHeight: "var(--ui-line-body)" }],
+        "ui-caption": ["var(--ui-font-size-caption)", { lineHeight: "1.4" }],
+      },
+      borderRadius: { ui: "var(--ui-radius-md)", "ui-sm": "var(--ui-radius-sm)", "ui-lg": "var(--ui-radius-lg)" },
+      boxShadow: { ui: "var(--ui-shadow-sm)", "ui-md": "var(--ui-shadow-md)", "ui-lg": "var(--ui-shadow-lg)" },
+    },
+  },
+  plugins: [],
+}

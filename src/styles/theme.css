@@ -1,0 +1,67 @@
+:root {
+  --ui-primary: 15 118 110;
+  --ui-primary-hover: 11 95 89;
+  --ui-primary-active: 9 75 71;
+  --ui-primary-soft: 230 244 241;
+  --ui-on-primary: 255 255 255;
+  --ui-surface: 255 255 255;
+  --ui-surface-raised: 255 255 255;
+  --ui-canvas: 246 248 248;
+  --ui-ink: 16 25 22;
+  --ui-muted: 98 113 110;
+  --ui-muted-strong: 70 83 80;
+  --ui-border: 220 228 226;
+  --ui-border-strong: 196 208 205;
+  --ui-success: 21 128 61;
+  --ui-success-soft: 234 247 238;
+  --ui-success-ink: 22 101 52;
+  --ui-warning: 180 83 9;
+  --ui-warning-soft: 255 247 232;
+  --ui-warning-ink: 146 64 14;
+  --ui-danger: 194 65 58;
+  --ui-danger-soft: 255 240 239;
+  --ui-danger-ink: 163 51 45;
+  --ui-info: 37 99 235;
+  --ui-info-soft: 239 246 255;
+  --ui-info-ink: 30 64 175;
+  --ui-font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --ui-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --ui-font-size-h1: 32px;
+  --ui-font-size-h2: 24px;
+  --ui-font-size-h3: 20px;
+  --ui-font-size-body: 16px;
+  --ui-font-size-small: 14px;
+  --ui-font-size-caption: 12px;
+  --ui-line-h1: 1.15;
+  --ui-line-h2: 1.25;
+  --ui-line-h3: 1.35;
+  --ui-line-body: 1.5;
+  --ui-space-1: 4px;
+  --ui-space-2: 8px;
+  --ui-space-3: 12px;
+  --ui-space-4: 16px;
+  --ui-space-5: 20px;
+  --ui-space-6: 24px;
+  --ui-space-8: 32px;
+  --ui-space-10: 40px;
+  --ui-space-12: 48px;
+  --ui-space-16: 64px;
+  --ui-radius-sm: 6px;
+  --ui-radius-md: 8px;
+  --ui-radius-lg: 12px;
+  --ui-shadow-sm: 0 1px 2px rgb(16 25 22 / 0.06);
+  --ui-shadow-md: 0 8px 24px rgb(16 25 22 / 0.1);
+  --ui-shadow-lg: 0 20px 48px rgb(16 25 22 / 0.14);
+  --ui-motion-fast: 120ms;
+  --ui-motion-base: 180ms;
+  --ui-motion-slow: 240ms;
+  --ui-motion-easing: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-density="comfortable"] { --ui-control-height: 44px; --ui-density-gap: 16px; --ui-density-padding: 16px; }
+[data-density="compact"] { --ui-control-height: 36px; --ui-density-gap: 10px; --ui-density-padding: 10px; }
+
+body { font-family: var(--ui-font-sans); font-size: var(--ui-font-size-body); line-height: var(--ui-line-body); color: rgb(var(--ui-ink)); background: rgb(var(--ui-canvas)); }
+button, input, select, textarea { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid rgb(var(--ui-primary) / 0.28); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 1ms !important; animation-duration: 1ms !important; } }
